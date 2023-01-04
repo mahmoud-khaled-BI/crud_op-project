@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>CURDS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>cruds</h2>
+            <p>product Management system</p>
+        </div>
+        <input type="text" id="title" placeholder="Title">
+        <div id="totalPrice">
+            <input onkeyup="getTotal()" type="number"  id="price" placeholder="Price">
+            <input onkeyup="getTotal()" type="number"  id="taxes" placeholder="Taxes">
+            <input onkeyup="getTotal()" type="number"  id="ads" placeholder="ads">
+            <input onkeyup="getTotal()" type="number"  id="discount" placeholder="Discount">
+            <small id="total" ></small>
+        </div>
+        <input type="number" id="count" placeholder="count">
+        <input type="text" id="category" placeholder="Category">
+        <input type="submit" value="Create" id= "createBtn">
+        <input onkeyup="search_item()" type="text" id="search" placeholder="Search">
+        <div id="searchBtn">
+            <button id="searchTitle">Search By Title</button>
+            <button id="searchCategory">Search By Category</button>
+        </div>
+        <div>
+            <button id="deleteAll">Delete All</button>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>PRICE</th>
+                <th>TAXES</th>
+                <th>ADS</th>
+                <th>DISCOUNT</th>
+                <th>TOTAL</th>
+                <th>CATEGORY</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+            <tBody id="tbody">
+            </tBody>
+        </table>
+    </div>
+    <Script src="./main.js"></Script>
+</body>
+</html>
